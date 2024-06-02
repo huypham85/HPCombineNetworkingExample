@@ -14,6 +14,15 @@
 		2DA3952C2C0AE02700D558A7 /* HPCombineNetworkingExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3952B2C0AE02700D558A7 /* HPCombineNetworkingExampleTests.swift */; };
 		2DA395362C0AE02700D558A7 /* HPCombineNetworkingExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395352C0AE02700D558A7 /* HPCombineNetworkingExampleUITests.swift */; };
 		2DA395382C0AE02700D558A7 /* HPCombineNetworkingExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395372C0AE02700D558A7 /* HPCombineNetworkingExampleUITestsLaunchTests.swift */; };
+		2DA395472C0AE11600D558A7 /* HPCombineNetworking in Frameworks */ = {isa = PBXBuildFile; productRef = 2DA395462C0AE11600D558A7 /* HPCombineNetworking */; };
+		2DA3954B2C0AE59100D558A7 /* UsersViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3954A2C0AE59100D558A7 /* UsersViewModel.swift */; };
+		2DA3954E2C0B3B6900D558A7 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3954D2C0B3B6900D558A7 /* User.swift */; };
+		2DA395512C0B8B0800D558A7 /* FetchUsersEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395502C0B8B0800D558A7 /* FetchUsersEndpoint.swift */; };
+		2DA395532C0BA41800D558A7 /* UpdateUserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395522C0BA41800D558A7 /* UpdateUserEndpoint.swift */; };
+		2DA395552C0CCEAF00D558A7 /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395542C0CCEAF00D558A7 /* UsersView.swift */; };
+		2DA395572C0CCEC100D558A7 /* UpdateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395562C0CCEC100D558A7 /* UpdateUserView.swift */; };
+		2DA395592C0CD3EE00D558A7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395582C0CD3EE00D558A7 /* ErrorView.swift */; };
+		2DA3955B2C0CD57D00D558A7 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3955A2C0CD57D00D558A7 /* UserRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,14 @@
 		2DA395312C0AE02700D558A7 /* HPCombineNetworkingExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HPCombineNetworkingExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2DA395352C0AE02700D558A7 /* HPCombineNetworkingExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCombineNetworkingExampleUITests.swift; sourceTree = "<group>"; };
 		2DA395372C0AE02700D558A7 /* HPCombineNetworkingExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HPCombineNetworkingExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		2DA3954A2C0AE59100D558A7 /* UsersViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersViewModel.swift; sourceTree = "<group>"; };
+		2DA3954D2C0B3B6900D558A7 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		2DA395502C0B8B0800D558A7 /* FetchUsersEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchUsersEndpoint.swift; sourceTree = "<group>"; };
+		2DA395522C0BA41800D558A7 /* UpdateUserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserEndpoint.swift; sourceTree = "<group>"; };
+		2DA395542C0CCEAF00D558A7 /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		2DA395562C0CCEC100D558A7 /* UpdateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserView.swift; sourceTree = "<group>"; };
+		2DA395582C0CD3EE00D558A7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
+		2DA3955A2C0CD57D00D558A7 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA395472C0AE11600D558A7 /* HPCombineNetworking in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,8 +112,11 @@
 		2DA395192C0AE02300D558A7 /* HPCombineNetworkingExample */ = {
 			isa = PBXGroup;
 			children = (
+				2DA3954F2C0B8AF300D558A7 /* Networking */,
+				2DA3954C2C0AE5D700D558A7 /* Model */,
+				2DA395492C0AE49500D558A7 /* ViewModels */,
+				2DA395482C0AE49000D558A7 /* Views */,
 				2DA3951A2C0AE02300D558A7 /* HPCombineNetworkingExampleApp.swift */,
-				2DA3951C2C0AE02300D558A7 /* ContentView.swift */,
 				2DA3951E2C0AE02700D558A7 /* Assets.xcassets */,
 				2DA395202C0AE02700D558A7 /* Preview Content */,
 			);
@@ -127,6 +148,43 @@
 			path = HPCombineNetworkingExampleUITests;
 			sourceTree = "<group>";
 		};
+		2DA395482C0AE49000D558A7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2DA3951C2C0AE02300D558A7 /* ContentView.swift */,
+				2DA395542C0CCEAF00D558A7 /* UsersView.swift */,
+				2DA395562C0CCEC100D558A7 /* UpdateUserView.swift */,
+				2DA395582C0CD3EE00D558A7 /* ErrorView.swift */,
+				2DA3955A2C0CD57D00D558A7 /* UserRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2DA395492C0AE49500D558A7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2DA3954A2C0AE59100D558A7 /* UsersViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		2DA3954C2C0AE5D700D558A7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2DA3954D2C0B3B6900D558A7 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2DA3954F2C0B8AF300D558A7 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2DA395502C0B8B0800D558A7 /* FetchUsersEndpoint.swift */,
+				2DA395522C0BA41800D558A7 /* UpdateUserEndpoint.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +201,9 @@
 			dependencies = (
 			);
 			name = HPCombineNetworkingExample;
+			packageProductDependencies = (
+				2DA395462C0AE11600D558A7 /* HPCombineNetworking */,
+			);
 			productName = HPCombineNetworkingExample;
 			productReference = 2DA395172C0AE02300D558A7 /* HPCombineNetworkingExample.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +276,9 @@
 				Base,
 			);
 			mainGroup = 2DA3950E2C0AE02300D558A7;
+			packageReferences = (
+				2DA395452C0AE11600D558A7 /* XCRemoteSwiftPackageReference "HPCombineNetworking" */,
+			);
 			productRefGroup = 2DA395182C0AE02300D558A7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -257,7 +321,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2DA395512C0B8B0800D558A7 /* FetchUsersEndpoint.swift in Sources */,
+				2DA3954E2C0B3B6900D558A7 /* User.swift in Sources */,
+				2DA395532C0BA41800D558A7 /* UpdateUserEndpoint.swift in Sources */,
 				2DA3951D2C0AE02300D558A7 /* ContentView.swift in Sources */,
+				2DA395572C0CCEC100D558A7 /* UpdateUserView.swift in Sources */,
+				2DA3954B2C0AE59100D558A7 /* UsersViewModel.swift in Sources */,
+				2DA3955B2C0CD57D00D558A7 /* UserRowView.swift in Sources */,
+				2DA395552C0CCEAF00D558A7 /* UsersView.swift in Sources */,
+				2DA395592C0CD3EE00D558A7 /* ErrorView.swift in Sources */,
 				2DA3951B2C0AE02300D558A7 /* HPCombineNetworkingExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -588,6 +660,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2DA395452C0AE11600D558A7 /* XCRemoteSwiftPackageReference "HPCombineNetworking" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huypham85/HPCombineNetworking";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2DA395462C0AE11600D558A7 /* HPCombineNetworking */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2DA395452C0AE11600D558A7 /* XCRemoteSwiftPackageReference "HPCombineNetworking" */;
+			productName = HPCombineNetworking;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2DA3950F2C0AE02300D558A7 /* Project object */;
 }

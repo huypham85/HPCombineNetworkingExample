@@ -1,0 +1,15 @@
+{
+  "originHash" : "aca6378202361a7c22c779be78e6ddf294e33617f7cb876820e6c9a31d6e8531",
+  "pins" : [
+    {
+      "identity" : "hpcombinenetworking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/huypham85/HPCombineNetworking",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "0d70c69fecb293941062dd75052983914aee4ba0"
+      }
+    }
+  ],
+  "version" : 3
+}

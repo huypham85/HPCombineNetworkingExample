@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import HPCombineNetworking
 
 struct UsersView: View {
     @ObservedObject var viewModel: UsersViewModel
@@ -41,5 +42,5 @@ struct UsersView: View {
 }
 
 #Preview {
-    UsersView(viewModel: UsersViewModel())
+    UsersView(viewModel: UsersViewModel(networkService: NetworkService(parser: JSONDataParser())))
 }

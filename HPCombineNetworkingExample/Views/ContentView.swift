@@ -6,13 +6,14 @@
 //
 
 import SwiftUI
+import HPCombineNetworking
 
 struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
-                NavigationLink(destination: UsersView(viewModel: UsersViewModel())) {
-                    Text("Go to First View")
+                NavigationLink(destination: createUsersView()) {
+                    Text("Go to Users View")
                 }
                 .padding()
                 NavigationLink(destination: UpdateUserView()) {
@@ -22,6 +23,23 @@ struct ContentView: View {
             }
         }
     }
+}
+
+extension ContentView {
+    
+    private func createUsersView() -> UsersView {
+        let networkService = NetworkService(parser: JSONDataParser())
+        let viewModel = UsersViewModel(networkService: networkService)
+        let usersView = UsersView(viewModel: viewModel)
+        return usersView
+    }
+
+//    private func createUsersView() -> UsersView {
+//        let networkService = NetworkService(parser: JSONDataParser())
+//        let viewModel = UsersViewModel(networkService: networkService)
+//        let usersView = UsersView(viewModel: viewModel)
+//        return usersView
+//    }
 }
 
 #Preview {

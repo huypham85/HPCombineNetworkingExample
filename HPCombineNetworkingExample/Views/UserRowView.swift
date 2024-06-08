@@ -12,14 +12,15 @@ struct UserRowView: View {
     init(user: User) {
         self.user = user
     }
+
     var body: some View {
-        VStack {
+        VStack(alignment: .leading, content: {
             HStack {
                 Text(user.userId)
                 Text(user.name)
             }
             Text(user.email)
-        }
+        })
     }
 }
 

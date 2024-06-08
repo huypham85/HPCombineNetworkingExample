@@ -19,8 +19,8 @@ final class UsersViewModel: ObservableObject {
         decoder.keyDecodingStrategy = .convertFromSnakeCase
         return decoder
     }()
-    // TODO: create JSONDecoder options for DataParser default init function
-    init(networkService: Networkable = NetworkService(parser: JSONDataParser(decoder: JSONDecoder()), errorHandler: NetworkErrorHandler())) {
+
+    init(networkService: Networkable) {
         self.networkService = networkService
     }
 

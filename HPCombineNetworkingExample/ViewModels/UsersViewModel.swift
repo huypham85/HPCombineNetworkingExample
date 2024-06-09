@@ -14,11 +14,6 @@ final class UsersViewModel: ObservableObject {
     @Published var error: NetworkError?
     private var cancellables = Set<AnyCancellable>()
     private var networkService: Networkable
-    let jsonDecoder: JSONDecoder = {
-        let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
-        return decoder
-    }()
 
     init(networkService: Networkable) {
         self.networkService = networkService

@@ -16,8 +16,8 @@ struct ContentView: View {
                     Text("Go to Users View")
                 }
                 .padding()
-                NavigationLink(destination: UpdateUserView()) {
-                    Text("Go to Second View")
+                NavigationLink(destination: createUpdateUsersView()) {
+                    Text("Go to Update User View")
                 }
                 .padding()
             }
@@ -34,12 +34,12 @@ extension ContentView {
         return usersView
     }
 
-//    private func createUsersView() -> UsersView {
-//        let networkService = NetworkService(parser: JSONDataParser())
-//        let viewModel = UsersViewModel(networkService: networkService)
-//        let usersView = UsersView(viewModel: viewModel)
-//        return usersView
-//    }
+    private func createUpdateUsersView() -> UpdateUserView {
+        let networkService = NetworkService(parser: JSONDataParser())
+        let viewModel = UpdateUserViewModel(networkService: networkService)
+        let updateUsersView = UpdateUserView(viewModel: viewModel)
+        return updateUsersView
+    }
 }
 
 #Preview {

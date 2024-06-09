@@ -7,9 +7,29 @@
 
 import Foundation
 import SwiftUI
+import HPCombineNetworking
 
 struct UpdateUserView: View {
+    @ObservedObject var viewModel: UpdateUserViewModel
+
     var body: some View {
-        Text("This is the Second View")
+        VStack {
+            TextField("Name", text: $viewModel.name)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+
+            TextField("Email", text: $viewModel.email)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            Button("Submit") {
+                viewModel.updateUser()
+            }
+        }
+    }
+}
+
+struct UpdateUserView_Previews: PreviewProvider {
+    static var previews: some View {
+        UpdateUserView(viewModel: UpdateUserViewModel(networkService: NetworkService(parser: JSONDataParser())))
     }
 }

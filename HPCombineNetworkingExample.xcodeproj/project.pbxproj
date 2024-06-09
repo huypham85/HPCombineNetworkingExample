@@ -23,6 +23,7 @@
 		2DA395572C0CCEC100D558A7 /* UpdateUserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395562C0CCEC100D558A7 /* UpdateUserView.swift */; };
 		2DA395592C0CD3EE00D558A7 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA395582C0CD3EE00D558A7 /* ErrorView.swift */; };
 		2DA3955B2C0CD57D00D558A7 /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DA3955A2C0CD57D00D558A7 /* UserRowView.swift */; };
+		2DBA45CF2C161805000F3462 /* UpdateUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DBA45CE2C161805000F3462 /* UpdateUserViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		2DA395562C0CCEC100D558A7 /* UpdateUserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserView.swift; sourceTree = "<group>"; };
 		2DA395582C0CD3EE00D558A7 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		2DA3955A2C0CD57D00D558A7 /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
+		2DBA45CE2C161805000F3462 /* UpdateUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateUserViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				2DA3954A2C0AE59100D558A7 /* UsersViewModel.swift */,
+				2DBA45CE2C161805000F3462 /* UpdateUserViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -329,6 +332,7 @@
 				2DA3954B2C0AE59100D558A7 /* UsersViewModel.swift in Sources */,
 				2DA3955B2C0CD57D00D558A7 /* UserRowView.swift in Sources */,
 				2DA395552C0CCEAF00D558A7 /* UsersView.swift in Sources */,
+				2DBA45CF2C161805000F3462 /* UpdateUserViewModel.swift in Sources */,
 				2DA395592C0CD3EE00D558A7 /* ErrorView.swift in Sources */,
 				2DA3951B2C0AE02300D558A7 /* HPCombineNetworkingExampleApp.swift in Sources */,
 			);

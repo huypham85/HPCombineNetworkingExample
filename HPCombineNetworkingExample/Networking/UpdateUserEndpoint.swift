@@ -9,7 +9,7 @@ import Foundation
 import HPCombineNetworking
 
 struct UpdateUserEndpoint: Endpoint {
-    typealias Response = APIResponse<[User]>
+    typealias Response = APIResponse<User>
 
     var baseURL: URL {
         return URL(string: "https://f1ad3c7c-dc45-4543-b5d4-5d571777c117.mock.pstmn.io/")!
@@ -27,9 +27,7 @@ struct UpdateUserEndpoint: Endpoint {
         return ["token": "abcdef"]
     }
 
-    var bodyParameters: (any HPCombineNetworking.BodyParameters)? {
-        return JSONBodyParameters(JSONObject: ["name": "Huy Pham", "email": "huypham85@gmail.com"])
-    }
+    var bodyParameters: BodyParameters?
 
     var headers: [String: String] {
         return [:]

@@ -31,7 +31,6 @@ struct UsersView: View {
         }
         .animation(.default, value: viewModel.error?.customMessage)
         .task {
-            try? await Task.sleep(for: .seconds(30))
             showError.toggle()
             viewModel.fetchUsers()
         }

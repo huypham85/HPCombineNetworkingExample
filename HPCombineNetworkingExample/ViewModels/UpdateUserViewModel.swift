@@ -12,14 +12,13 @@ import HPCombineNetworking
 enum UpdateUserViewState {
     case idle
     case loading
-    case success
+    case success(String)
     case failure(NetworkError)
 }
 
 class UpdateUserViewModel: ObservableObject {
     @Published var name: String = ""
     @Published var email: String = ""
-    @Published var error: NetworkError?
     @Published var state: UpdateUserViewState = .idle
     private var networkService: Networkable
     private var cancellables = Set<AnyCancellable>()
@@ -42,8 +41,8 @@ class UpdateUserViewModel: ObservableObject {
                 case let .failure(error):
                     self.state = .failure(error)
                 }
-            } receiveValue: { [weak self] _ in
-                self?.state = .success
+            } receiveValue: { [weak self] response in
+                self?.state = .success(response.message)
             }
             .store(in: &cancellables)
     }

@@ -26,7 +26,7 @@ struct UpdateUserView: View {
             }
             .overlay {
                 switch viewModel.state {
-                case .idle, .loading:
+                case .idle:
                     EmptyView()
                 case let .success(message):
                     ErrorView(errorTitle: message)

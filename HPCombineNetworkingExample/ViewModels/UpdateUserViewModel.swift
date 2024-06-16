@@ -11,7 +11,6 @@ import HPCombineNetworking
 
 enum UpdateUserViewState {
     case idle
-    case loading
     case success(String)
     case failure(NetworkError)
 }
@@ -19,7 +18,7 @@ enum UpdateUserViewState {
 class UpdateUserViewModel: ObservableObject {
     @Published var name: String = ""
     @Published var email: String = ""
-    @Published var state: UpdateUserViewState = .idle
+    @Published var state: UpdateUserViewState = .success("")
     private var networkService: Networkable
     private var cancellables = Set<AnyCancellable>()
 
@@ -43,6 +42,7 @@ class UpdateUserViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] response in
                 self?.state = .success(response.message)
+                print("API succeeded")
             }
             .store(in: &cancellables)
     }
